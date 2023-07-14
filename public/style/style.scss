@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Italiana', serif;
+    cursor: url(../img/cursor.png), auto;
+}
+
+body{
+    background-color: #1e2125;
+}
+
+header{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        max-width: 10rem;
+    }
+    #bars_group{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 2rem;
+        &:hover{
+            cursor: pointer;
+        }
+        .bar{
+            background-color: #E9DFCE;
+            border-radius: 50px;
+        }
+        .bar1{
+            width: 3rem;
+            height: 0.2rem;
+        }
+        .bar2{
+            width: 2.5rem;
+            height: 0.2rem;
+        }
+        .bar3{
+            width: 2rem;
+            height: 0.2rem;
+        }
+    }
+    border: 1px solid white;
+}
+
+.container{
+    border: 1px solid green;
+    color: #E9DFCE;
+    text-align: center;
+    #profession{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 122.734%; /* 39.275px */
+    }
+}
