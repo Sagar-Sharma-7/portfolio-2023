@@ -26,7 +26,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid white;
+  height: 15vh;
+  min-height: 80px;
 }
 
 header img {
@@ -74,16 +75,72 @@ header #bars_group .bar3 {
 }
 
 .container {
-  border: 1px solid green;
   color: #E9DFCE;
   text-align: center;
+  height: 85vh;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 20px;
 }
 
 .container #profession {
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 122.734%;
+  /* 39.275px */
+}
+
+.container .main_heading {
+  text-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container .main_heading #first_heading {
+  font-size: calc(10vw + 10px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.734%;
+  /* 189.011px */
+  background: -webkit-gradient(linear, left top, left bottom, from(#E9DFCE), to(#1e2125));
+  background: linear-gradient(180deg, #E9DFCE, #1e2125);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.container .main_heading #second_heading {
+  color: #E9DFCE;
+  text-align: center;
+  font-family: Italiana;
+  font-size: calc(10vw + 10px);
+  font-style: normal;
+  font-weight: 400;
+  margin-top: calc(-7vw + 10px);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.container .semi_heading p {
+  margin-top: -1vw;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
   /* 39.275px */
 }
 /*# sourceMappingURL=style.css.map */
