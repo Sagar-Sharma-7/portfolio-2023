@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chokokutai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kings&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 }
 
 html {
-  font-family: 'Italiana', serif;
+  font-family: 'Playfair Display', serif;
   cursor: url(../img/cursor.png), auto;
 }
 
@@ -74,7 +79,7 @@ header #bars_group .bar3 {
   height: 0.2rem;
 }
 
-.container {
+.home_container {
   color: #E9DFCE;
   text-align: center;
   height: 85vh;
@@ -89,14 +94,14 @@ header #bars_group .bar3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
   padding: 20px;
 }
 
-.container #profession {
+.home_container #profession {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -104,30 +109,24 @@ header #bars_group .bar3 {
   /* 39.275px */
 }
 
-.container .main_heading {
-  text-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-.container .main_heading #first_heading {
-  font-size: calc(10vw + 10px);
+.home_container .main_heading #first_heading {
+  color: transparent;
+  font-size: 154px;
   font-style: normal;
   font-weight: 400;
   line-height: 122.734%;
   /* 189.011px */
-  background: -webkit-gradient(linear, left top, left bottom, from(#E9DFCE), to(#1e2125));
-  background: linear-gradient(180deg, #E9DFCE, #1e2125);
-  background-clip: text;
+  text-shadow: 0px 0px 3px #121416;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
-.container .main_heading #second_heading {
+.home_container .main_heading #second_heading {
   color: #E9DFCE;
   text-align: center;
-  font-family: Italiana;
-  font-size: calc(10vw + 10px);
+  font-size: 10vw;
   font-style: normal;
   font-weight: 400;
   margin-top: calc(-7vw + 10px);
@@ -135,7 +134,7 @@ header #bars_group .bar3 {
   transition: 500ms;
 }
 
-.container .semi_heading p {
+.home_container .semi_heading p {
   margin-top: -1vw;
   font-size: 64px;
   font-style: normal;
