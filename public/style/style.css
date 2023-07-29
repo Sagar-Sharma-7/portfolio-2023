@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
 /*Variables*/
 * {
   margin: 0;
@@ -12,8 +13,13 @@ body {
 }
 
 header {
-  padding: 0 20px;
+  padding: 0 40px;
   height: 85px;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,4 +72,72 @@ header .hire_btn:hover {
   background-color: #FF7F63;
   color: #000000;
   font-weight: 700;
+}
+
+.main_container {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 500px;
+  height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.main_container .inner_left {
+  width: 50%;
+}
+.main_container .inner_left .intro_wrap {
+  font-weight: 700;
+  font-family: "Bagel Fat One", cursive;
+  font-size: 56px;
+  display: grid;
+}
+.main_container .inner_left .intro_wrap .first_line {
+  grid-row: 1;
+  grid-column: 1;
+}
+.main_container .inner_left .intro_wrap .curve_arrow {
+  grid-column: 2;
+  grid-row: 1/span 2;
+}
+.main_container .inner_left .intro_wrap .second_line {
+  grid-row: 2;
+}
+.main_container .inner_left .intro_wrap .second_line .highlight {
+  padding: 0px 20px;
+  background-color: #FF7F63;
+  color: #FFEDE3;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.main_container .inner_left .intro_wrap .third_line {
+  grid-column: 1/span 2;
+  grid-row: 3;
+}
+.main_container .inner_left .brief_question {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 50px;
+  font-weight: 700;
+  color: #858585;
+}
+.main_container .inner_left .work_btn {
+  border: none;
+  outline: none;
+  padding: 10px max(2vw, 30px);
+  color: #FFEDE3;
+  background-color: #000000;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: 200ms;
+}
+.main_container .inner_left .work_btn:hover {
+  border-radius: 6px 50px 50px 6px;
+  cursor: pointer;
+  padding: 10px max(4vw, 40px);
+}
+.main_container .inner_right {
+  border: 1px solid blue;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

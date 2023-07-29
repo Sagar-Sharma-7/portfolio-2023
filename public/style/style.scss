@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
 /*Variables*/
 $primary-color: #FFEDE3;
@@ -19,8 +20,13 @@ body{
 }
 
 header{
-    padding: 0 20px;
+    padding: 0 40px;
     height: 85px;
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,5 +80,75 @@ header{
             color: $text-color;
             font-weight: 700;
         }
+    }
+}
+
+.main_container{
+    max-width: 1400px;
+    width: 100%;
+    min-height: 500px;
+    height: calc(100vh - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    .inner_left{
+        width: 50%;
+        .intro_wrap{
+            font-weight: 700;
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 56px;
+            display: grid;
+            .first_line{
+                grid-row: 1;
+                grid-column: 1;
+            }
+            .curve_arrow{
+                grid-column: 2;
+                grid-row: 1 / span 2;
+            }
+            .second_line{
+                grid-row: 2;
+                .highlight{
+                    padding: 0px 20px;
+                    background-color: $secondary-one;
+                    color: $primary-color;
+                    border-radius: 50px;
+                    font-weight: 500;
+                }
+            }
+            .third_line{
+                grid-column: 1 / span 2;
+                grid-row: 3;
+            }
+        }
+        .brief_question{
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 18px;
+            margin-top: 50px;
+            font-weight: 700;
+            color: #858585;
+        }
+        .work_btn{
+            border: none;
+            outline: none;
+            padding: 10px max(2vw, 30px);
+            color: $primary-color;
+            background-color: $text-color;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: 200ms;
+            &:hover{
+                border-radius: 6px 50px 50px 6px;
+                cursor: pointer;
+                padding: 10px max(4vw, 40px);
+            }
+
+        }
+
+    }
+    .inner_right{
+        border: 1px solid blue;
+        width: 50%;
     }
 }
