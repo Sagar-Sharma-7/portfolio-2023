@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+/*Variables*/
+$primary-color: #FFEDE3;
+$text-color: #000000;
+$secondary-one: #FF7F63;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-color;
+    padding: 0px 20px;
+
+}
+
+header{
+    padding: 0 20px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    .logo_wrap{
+        img{
+            height: 40px;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        a{
+            position: relative;
+            text-decoration: none;
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 300ms;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $secondary-one;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+    .hire_btn{
+        border: none;
+        outline: none;
+        padding: 6px 20px;
+        background-color: $text-color;
+        color: $primary-color;
+        border-radius: 50px;
+        font-family: 'Nunito Sans', sans-serif;
+        transition: 200ms;
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary-one;
+            color: $text-color;
+            font-weight: 700;
+        }
+    }
+}
