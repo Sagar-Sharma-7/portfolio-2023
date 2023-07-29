@@ -5,6 +5,7 @@
 $primary-color: #FFEDE3;
 $text-color: #000000;
 $secondary-one: #FF7F63;
+$secondary-two: #8668FF;
 
 
 *{
@@ -92,12 +93,15 @@ header{
     justify-content: center;
     align-items: center;
     padding: 0 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     .inner_left{
         width: 50%;
         .intro_wrap{
             font-weight: 700;
             font-family: 'Bagel Fat One', cursive;
-            font-size: 56px;
+            font-size: min(3vw, 56px);
             display: grid;
             .first_line{
                 grid-row: 1;
@@ -148,7 +152,32 @@ header{
 
     }
     .inner_right{
-        border: 1px solid blue;
         width: 50%;
+        padding: 80px;
+        background: url(../img/hexagon_pattern.png);
+        background-color: transparent;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .keywords_wrap{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            .keyword{
+                border: 1px solid $secondary-two;
+                border-radius: 50px;
+                color: $secondary-two;
+                padding: 5px 20px;
+                transition: 500ms;
+                &:hover{
+                    background-color: $secondary-two;
+                    color: $primary-color;
+                    cursor: default;
+                    transform: scaleX(1.1);
+                }
+            }
+        }
     }
 }

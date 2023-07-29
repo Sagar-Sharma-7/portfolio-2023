@@ -83,6 +83,9 @@ header .hire_btn:hover {
   justify-content: center;
   align-items: center;
   padding: 0 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .main_container .inner_left {
   width: 50%;
@@ -90,7 +93,7 @@ header .hire_btn:hover {
 .main_container .inner_left .intro_wrap {
   font-weight: 700;
   font-family: "Bagel Fat One", cursive;
-  font-size: 56px;
+  font-size: min(3vw, 56px);
   display: grid;
 }
 .main_container .inner_left .intro_wrap .first_line {
@@ -138,6 +141,31 @@ header .hire_btn:hover {
   padding: 10px max(4vw, 40px);
 }
 .main_container .inner_right {
-  border: 1px solid blue;
   width: 50%;
+  padding: 80px;
+  background: url(../img/hexagon_pattern.png);
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main_container .inner_right .keywords_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.main_container .inner_right .keywords_wrap .keyword {
+  border: 1px solid #8668FF;
+  border-radius: 50px;
+  color: #8668FF;
+  padding: 5px 20px;
+  transition: 500ms;
+}
+.main_container .inner_right .keywords_wrap .keyword:hover {
+  background-color: #8668FF;
+  color: #FFEDE3;
+  cursor: default;
+  transform: scaleX(1.1);
 }/*# sourceMappingURL=style.css.map */
