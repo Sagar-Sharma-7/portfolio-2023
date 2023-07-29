@@ -93,30 +93,14 @@ header .hire_btn:hover {
 .main_container .inner_left .intro_wrap {
   font-weight: 700;
   font-family: "Bagel Fat One", cursive;
-  font-size: min(3vw, 56px);
-  display: grid;
+  font-size: clamp(44px, 4vw, 54px);
 }
-.main_container .inner_left .intro_wrap .first_line {
-  grid-row: 1;
-  grid-column: 1;
-}
-.main_container .inner_left .intro_wrap .curve_arrow {
-  grid-column: 2;
-  grid-row: 1/span 2;
-}
-.main_container .inner_left .intro_wrap .second_line {
-  grid-row: 2;
-}
-.main_container .inner_left .intro_wrap .second_line .highlight {
+.main_container .inner_left .intro_wrap .intro .highlight {
   padding: 0px 20px;
   background-color: #FF7F63;
   color: #FFEDE3;
   border-radius: 50px;
   font-weight: 500;
-}
-.main_container .inner_left .intro_wrap .third_line {
-  grid-column: 1/span 2;
-  grid-row: 3;
 }
 .main_container .inner_left .brief_question {
   font-family: "Nunito Sans", sans-serif;
@@ -142,7 +126,7 @@ header .hire_btn:hover {
 }
 .main_container .inner_right {
   width: 50%;
-  padding: 80px;
+  padding: min(3vw, 60px);
   background: url(../img/hexagon_pattern.png);
   background-color: transparent;
   background-position: center;
@@ -158,7 +142,7 @@ header .hire_btn:hover {
 }
 .main_container .inner_right .keywords_wrap .keyword {
   border: 1px solid #8668FF;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #8668FF;
   padding: 5px 20px;
   transition: 500ms;
@@ -167,5 +151,5 @@ header .hire_btn:hover {
   background-color: #8668FF;
   color: #FFEDE3;
   cursor: default;
-  transform: scaleX(1.1);
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

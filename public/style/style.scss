@@ -101,18 +101,8 @@ header{
         .intro_wrap{
             font-weight: 700;
             font-family: 'Bagel Fat One', cursive;
-            font-size: min(3vw, 56px);
-            display: grid;
-            .first_line{
-                grid-row: 1;
-                grid-column: 1;
-            }
-            .curve_arrow{
-                grid-column: 2;
-                grid-row: 1 / span 2;
-            }
-            .second_line{
-                grid-row: 2;
+            font-size: clamp(44px, 4vw, 54px);
+            .intro{
                 .highlight{
                     padding: 0px 20px;
                     background-color: $secondary-one;
@@ -120,10 +110,6 @@ header{
                     border-radius: 50px;
                     font-weight: 500;
                 }
-            }
-            .third_line{
-                grid-column: 1 / span 2;
-                grid-row: 3;
             }
         }
         .brief_question{
@@ -153,7 +139,7 @@ header{
     }
     .inner_right{
         width: 50%;
-        padding: 80px;
+        padding: min(3vw, 60px);
         background: url(../img/hexagon_pattern.png);
         background-color: transparent;
         background-position: center;
@@ -167,7 +153,7 @@ header{
             justify-content: center;
             .keyword{
                 border: 1px solid $secondary-two;
-                border-radius: 50px;
+                border-radius: 10px;
                 color: $secondary-two;
                 padding: 5px 20px;
                 transition: 500ms;
@@ -175,7 +161,7 @@ header{
                     background-color: $secondary-two;
                     color: $primary-color;
                     cursor: default;
-                    transform: scaleX(1.1);
+                    border-radius: 50px;
                 }
             }
         }
