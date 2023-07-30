@@ -152,4 +152,30 @@ header .hire_btn:hover {
   color: #FFEDE3;
   cursor: default;
   border-radius: 50px;
+}
+.main_container .curve_text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.main_container .curve_text img {
+  border-radius: 50%;
+  height: 100px;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.main_container .down_arrow {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #858585;
 }/*# sourceMappingURL=style.css.map */
