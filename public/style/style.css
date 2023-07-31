@@ -38,7 +38,7 @@ header nav a {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   transition: 300ms;
 }
 header nav a::after {
@@ -76,8 +76,9 @@ header .hire_btn:hover {
 
 .main_container {
   max-width: 1400px;
+  max-height: 1000px;
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   height: calc(100vh - 85px);
   display: flex;
   justify-content: center;
@@ -125,33 +126,29 @@ header .hire_btn:hover {
   padding: 10px max(4vw, 40px);
 }
 .main_container .inner_right {
+  font-family: "Bagel Fat One", cursive;
   width: 50%;
-  padding: min(3vw, 60px);
-  background: url(../img/hexagon_pattern.png);
-  background-color: transparent;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.main_container .inner_right .keywords_wrap {
+  height: 95%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  background-color: #000000;
+  line-height: 150px;
+  border-radius: 0 20px 20px 0;
 }
-.main_container .inner_right .keywords_wrap .keyword {
-  border: 1px solid #8668FF;
-  border-radius: 10px;
-  color: #8668FF;
-  padding: 5px 20px;
-  transition: 500ms;
+.main_container .inner_right .vertical_text {
+  transform: rotate(-90deg);
 }
-.main_container .inner_right .keywords_wrap .keyword:hover {
-  background-color: #8668FF;
+.main_container .inner_right .vertical_text p {
+  font-size: 150px;
   color: #FFEDE3;
+  transition: 700ms;
+}
+.main_container .inner_right .vertical_text p:hover {
+  color: #FF7F63;
   cursor: default;
-  border-radius: 50px;
 }
 .main_container .curve_text {
   position: absolute;
@@ -162,7 +159,7 @@ header .hire_btn:hover {
 .main_container .curve_text img {
   border-radius: 50%;
   height: 100px;
-  animation: rotation 2s infinite linear;
+  animation: rotation 4s infinite linear;
 }
 @keyframes rotation {
   from {
@@ -177,5 +174,5 @@ header .hire_btn:hover {
   bottom: 65px;
   left: 50%;
   transform: translate(-50%, 0);
-  color: #858585;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
