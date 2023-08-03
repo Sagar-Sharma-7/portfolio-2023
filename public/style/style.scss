@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito+Sans:opsz,wght@6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+$primary-color: #FEE8D5;
+$secondary-color: #050505;
+$accent-color: #610C27;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.coverpage_wrap{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: $secondary-color;
+    display: none; // change to flex 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    .welcome_text{
+        font-size: 48px;
+        color: $primary-color;
+    }
+    .portfolio_text{
+        color: transparent;
+        font-size: 84px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $accent-color;
+    }
+}
