@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito+Sans:opsz,wght@6..12,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap');
+
 
 $primary-color: #FEE8D5;
 $secondary-color: #050505;
 $accent-color: #610C27;
+
+@mixin flexbox($align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
 
 *{
     margin: 0%;
@@ -13,19 +19,23 @@ $accent-color: #610C27;
 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    padding: 0 50px;
+    background-color: $primary-color;
+    overflow-x: hidden;
 }
 
 .coverpage_wrap{
     position: absolute;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+    min-height: 500px;
     z-index: 9999;
     background-color: $secondary-color;
     display: none; // change to flex 
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // @include flexbox(center, center);
     text-transform: uppercase;
     font-weight: 900;
     .welcome_text{
@@ -37,5 +47,102 @@ body{
         font-size: 84px;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $accent-color;
+    }
+}
+
+header{
+    @include flexbox(center, center);
+    width: 100%;
+    height: 75px;
+    .navbar_wrap{
+        @include flexbox(center, space-between);
+        width: 100%;
+        max-width: 1440px;
+        font-weight: 400;
+        nav{
+            @include flexbox(center, center);
+            gap: 50px;
+            a{
+                font-size: 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $secondary-color;
+            }
+        }
+        .hire_me_btn{
+            border: none;
+            outline: none;
+            font-size: 12px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            color: $primary-color;
+            background-color: $accent-color;
+            transition: 100ms;
+            &:hover{
+                outline: 2px solid $accent-color;
+                color: $accent-color;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main_container_wrap{
+    height: calc(100vh - 75px);
+    @include flexbox(center, center);
+    flex-direction: column;
+    cursor: default;
+    gap:50px;
+    .typewriting{
+        font-size: 24px;
+    }
+    .focal_heading_wrap{
+        .focal_heading{
+            font-size: 96px;
+            line-height: 96px;
+            text-align: center;
+            font-weight: 900;
+        }
+        .heading2{
+            color: transparent;
+            font-family: 'Roboto', sans-serif;
+            -webkit-text-stroke-width: 2px;
+            font-weight: 900;
+            -webkit-text-stroke-color: $accent-color;
+            // -webkit-text-fill-color: transparent; 
+            transition: 400ms;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+        .location{
+            font-size: 24px;
+        }
+    }
+    .buttons_wrap{
+        margin-top: 4vh;
+        button{
+            font-size: 18px;
+            border: 0;
+            outline: 0;
+            padding: 10px 25px;
+            margin: 5px;
+            transition: 500ms;
+            &:hover{
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        }
+        .designer_btn{
+            background-color: $secondary-color;
+            border: 2px solid $secondary-color;
+            color: $primary-color;
+        }
+        .developer_btn{
+            background-color: transparent;
+            border: 2px solid $accent-color;
+            color: $accent-color;
+        }
     }
 }
