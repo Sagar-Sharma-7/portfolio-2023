@@ -68,14 +68,15 @@ header .navbar_wrap .hire_me_btn {
   border: none;
   outline: none;
   font-size: 12px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   text-transform: uppercase;
   color: #FEE8D5;
   background-color: #610C27;
-  transition: 100ms;
+  border: 2px solid #610C27;
+  transition: 300ms;
 }
 header .navbar_wrap .hire_me_btn:hover {
-  outline: 2px solid #610C27;
+  border: 2px solid #610C27;
   color: #610C27;
   background-color: transparent;
   cursor: pointer;
@@ -101,6 +102,7 @@ header .navbar_wrap .hire_me_btn:hover {
 }
 .main_container_wrap .focal_heading_wrap .heading2 {
   color: transparent;
+  font-size: 96px;
   font-family: "Roboto", sans-serif;
   -webkit-text-stroke-width: 2px;
   font-weight: 900;
@@ -111,7 +113,8 @@ header .navbar_wrap .hire_me_btn:hover {
   color: #610C27;
 }
 .main_container_wrap .focal_heading_wrap .location {
-  font-size: 24px;
+  font-size: 16px;
+  text-align: right;
 }
 .main_container_wrap .buttons_wrap {
   margin-top: 4vh;
@@ -124,17 +127,33 @@ header .navbar_wrap .hire_me_btn:hover {
   margin: 5px;
   transition: 500ms;
 }
-.main_container_wrap .buttons_wrap button:hover {
-  cursor: pointer;
-  border-radius: 50%;
-}
 .main_container_wrap .buttons_wrap .designer_btn {
   background-color: #050505;
   border: 2px solid #050505;
   color: #FEE8D5;
 }
+.main_container_wrap .buttons_wrap .designer_btn:hover {
+  cursor: pointer;
+  border-radius: 0 30px 30px 0;
+}
 .main_container_wrap .buttons_wrap .developer_btn {
   background-color: transparent;
   border: 2px solid #610C27;
   color: #610C27;
+}
+.main_container_wrap .buttons_wrap .developer_btn:hover {
+  cursor: pointer;
+  border-radius: 30px 0px 0px 30px;
+}
+.main_container_wrap .scrolldown_Wrap {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: rgba(5, 5, 5, 0.2549019608);
+}
+.main_container_wrap .scrolldown_Wrap .scrolldown {
+  font-size: 16px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */
