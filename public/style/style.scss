@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap');
 
-
 $primary-color: #FEE8D5;
 $secondary-color: #050505;
 $accent-color: #610C27;
@@ -63,7 +62,7 @@ header{
             @include flexbox(center, center);
             gap: 50px;
             a{
-                font-size: 16px;
+                font-size: 14px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $secondary-color;
@@ -97,6 +96,7 @@ header{
     gap:50px;
     .typewriting{
         font-size: 24px;
+        font-weight: 500;
     }
     .focal_heading_wrap{
         .focal_heading{
@@ -154,15 +154,37 @@ header{
         }
     }
     .scrolldown_Wrap{
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        color: #05050541;
-        .scrolldown{
-            font-size: 16px;
-            margin-bottom: 5px;
+        img{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .mouse{
+            bottom: 40px;
+            height: 36px;
+            z-index: 2;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .scrollbtn{
+            height: 8px;
+            bottom: 45px;
+            animation: scrolling 1s ease-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes scrolling {
+            0%{
+                bottom: 45px;
+            }
+            50%{
+                bottom: 60px;
+            }
+            100%{
+                bottom: 45px;
+            }
+            
         }
     }
 }

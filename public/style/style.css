@@ -59,7 +59,7 @@ header .navbar_wrap nav {
   gap: 50px;
 }
 header .navbar_wrap nav a {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #050505;
@@ -93,6 +93,7 @@ header .navbar_wrap .hire_me_btn:hover {
 }
 .main_container_wrap .typewriting {
   font-size: 24px;
+  font-weight: 500;
 }
 .main_container_wrap .focal_heading_wrap .focal_heading {
   font-size: 96px;
@@ -145,15 +146,33 @@ header .navbar_wrap .hire_me_btn:hover {
   cursor: pointer;
   border-radius: 30px 0px 0px 30px;
 }
-.main_container_wrap .scrolldown_Wrap {
+.main_container_wrap .scrolldown_Wrap img {
   position: absolute;
-  bottom: 10px;
   left: 50%;
   transform: translate(-50%, 0);
-  text-align: center;
-  color: rgba(5, 5, 5, 0.2549019608);
 }
-.main_container_wrap .scrolldown_Wrap .scrolldown {
-  font-size: 16px;
-  margin-bottom: 5px;
+.main_container_wrap .scrolldown_Wrap .mouse {
+  bottom: 40px;
+  height: 36px;
+  z-index: 2;
+}
+.main_container_wrap .scrolldown_Wrap .mouse:hover {
+  cursor: pointer;
+}
+.main_container_wrap .scrolldown_Wrap .scrollbtn {
+  height: 8px;
+  bottom: 45px;
+  animation: scrolling 1s ease-out infinite;
+  z-index: 1;
+}
+@keyframes scrolling {
+  0% {
+    bottom: 45px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 45px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -5,7 +5,6 @@ const coverPageToggle = () => {
     const coverpageInterval=  setInterval(() => {
         if(i <= 150){
             coverPageWrap.style.top = `-${i}%`;
-            coverPageWrap.style.borderRadius = `${i}%`;
             console.log(i)
             i++;
         }else{
@@ -13,7 +12,7 @@ const coverPageToggle = () => {
             coverPageWrap.style.zIndex = "-1"
             clearInterval(coverpageInterval)
         }
-    }, 10);
+    }, 1);
 }
 
 setTimeout(() => {
