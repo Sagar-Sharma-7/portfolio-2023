@@ -32,9 +32,9 @@ body{
     min-height: 500px;
     z-index: 9999;
     background-color: $secondary-color;
-    // display: none; // change to flex 
+    display: none; // change to flex
     flex-direction: column;
-    @include flexbox(center, center);
+    // @include flexbox(center, center);
     text-transform: uppercase;
     font-weight: 900;
     animation: coverpage 500ms ease-out 1s forwards;
@@ -61,7 +61,7 @@ body{
         left: 100%;
         border-radius: 50%;
     }
-    
+
 }
 
 header{
@@ -127,7 +127,7 @@ header{
             -webkit-text-stroke-width: 2px;
             font-weight: 900;
             -webkit-text-stroke-color: $accent-color;
-            // -webkit-text-fill-color: transparent; 
+            // -webkit-text-fill-color: transparent;
             transition: 400ms;
             &:hover{
                 color: $accent-color;
@@ -199,7 +199,7 @@ header{
             100%{
                 bottom: 45px;
             }
-            
+
         }
     }
 }

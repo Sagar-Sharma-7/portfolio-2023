@@ -21,10 +21,8 @@ body {
   min-height: 500px;
   z-index: 9999;
   background-color: #050505;
+  display: none;
   flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   font-weight: 900;
   animation: coverpage 500ms ease-out 1s forwards;
