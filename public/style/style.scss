@@ -16,9 +16,34 @@ $accent-color: #610C27;
     box-sizing: border-box;
 }
 
+/* Customize scrollbar width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Customize scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: $secondary-color;
+}
+  
+/* Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: $accent-color;
+}
+  
+/* Customize scrollbar buttons */
+::-webkit-scrollbar-button {
+    background-color: transparent;
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Nunito Sans', sans-serif;
-    padding: 0 50px;
+    // padding: 0 50px;
     background-color: $primary-color;
     overflow-x: hidden;
 }
@@ -68,6 +93,7 @@ header{
     @include flexbox(center, center);
     width: 100%;
     height: 75px;
+    padding: 0 50px;
     .navbar_wrap{
         @include flexbox(center, space-between);
         width: 100%;
@@ -113,6 +139,7 @@ header{
     @include flexbox(center, center);
     flex-direction: column;
     cursor: default;
+    padding: 0 50px;
     gap:50px;
     .typewriting{
         font-size: 24px;
@@ -170,6 +197,41 @@ header{
             &:hover{
                 cursor: pointer;
                 border-radius: 30px 0px 0px 30px;
+            }
+        }
+    }
+}
+
+.about_container_wrap{
+    background-color: $secondary-color;
+    height: 100vh;
+    min-height: 700px;
+    width: 100vw;
+    @include flexbox(center, center);
+    .about_container{
+        height: 100%;
+        max-height: 800px;
+        width: 50vw;
+        max-width: 500px;
+        padding: 50px 10px;
+        @include flexbox(center, space-evenly);
+        flex-direction: column;
+        .description{
+            color: $primary-color;
+            text-align: center;
+            font-size: 16px;
+        }
+        .exploreBtn{
+            background-color: $accent-color;
+            border: none;
+            outline: none;
+            color: $primary-color;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transition: 200ms;
+            &:hover{
+                cursor: pointer;
+                padding: 10px 50px;
             }
         }
     }
