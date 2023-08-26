@@ -7,7 +7,7 @@ let timer;
 
 function typingEffect() {
 	let word = words[i].split("");
-	var loopTyping = function() {
+	let loopTyping = () => {
 		if (word.length > 0) {
 			textElement.innerHTML += word.shift();
 		} else {
@@ -21,7 +21,7 @@ function typingEffect() {
 
 function deletingEffect() {
 	let word = words[i].split("");
-	var loopDeleting = function() {
+	let loopDeleting = () => {
 		if (word.length > 0) {
 			word.pop();
 			textElement.innerHTML = word.join("");

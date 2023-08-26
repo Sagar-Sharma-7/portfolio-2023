@@ -21,8 +21,10 @@ body {
   min-height: 500px;
   z-index: 9999;
   background-color: #050505;
-  display: none;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-weight: 900;
   animation: coverpage 500ms ease-out 1s forwards;
@@ -76,6 +78,10 @@ header .navbar_wrap nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: #050505;
+  transition: 200ms;
+}
+header .navbar_wrap nav a:hover {
+  transform: scale(1.1);
 }
 header .navbar_wrap .hire_me_btn {
   border: none;
@@ -97,6 +103,7 @@ header .navbar_wrap .hire_me_btn:hover {
 
 .main_container_wrap {
   height: calc(100vh - 75px);
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,6 +166,9 @@ header .navbar_wrap .hire_me_btn:hover {
   cursor: pointer;
   border-radius: 30px 0px 0px 30px;
 }
+.main_container_wrap .scrolldown_Wrap {
+  display: none;
+}
 .main_container_wrap .scrolldown_Wrap img {
   position: absolute;
   left: 50%;
@@ -187,5 +197,21 @@ header .navbar_wrap .hire_me_btn:hover {
   }
   100% {
     bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .navbar_wrap .hire_me_btn {
+    padding: 6px 16px;
+  }
+  .main_container_wrap .typewriting {
+    font-size: 18px;
+  }
+  .main_container_wrap .focal_heading_wrap .focal_heading {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .main_container_wrap .focal_heading_wrap .heading2 {
+    font-size: 72px;
   }
 }/*# sourceMappingURL=style.css.map */
