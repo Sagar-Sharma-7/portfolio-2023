@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap');
 
 $primary-color: #FEE8D5;
 $secondary-color: #050505;
@@ -83,7 +83,7 @@ body{
     }
     100%{
         top: -100%;
-        left: 100%;
+        // left: 100%;
         border-radius: 50%;
     }
     
@@ -222,16 +222,22 @@ header{
             font-size: 16px;
         }
         .exploreBtn{
-            background-color: $accent-color;
+            background-color: transparent;
             border: none;
             outline: none;
-            color: $primary-color;
-            border-radius: 50px;
-            padding: 10px 30px;
+            box-shadow: 
+                0.3em 0.3em 0 0 $accent-color,
+                inset 0.3em 0.3em 0 0 $accent-color;
+            color: $accent-color;
+            // border-radius: 50px;
+            padding: 15px 30px;
             transition: 200ms;
             &:hover{
                 cursor: pointer;
-                padding: 10px 50px;
+                box-shadow: 
+                        0 0 0 0 $accent-color,
+                        inset 6em 3.5em 0 0 $accent-color;
+                color: $primary-color;
             }
         }
     }

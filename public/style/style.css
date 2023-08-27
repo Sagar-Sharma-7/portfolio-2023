@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -72,7 +72,6 @@ body {
   }
   100% {
     top: -100%;
-    left: 100%;
     border-radius: 50%;
   }
 }
@@ -219,17 +218,18 @@ header .navbar_wrap .hire_me_btn:hover {
   font-size: 16px;
 }
 .about_container_wrap .about_container .exploreBtn {
-  background-color: #610C27;
+  background-color: transparent;
   border: none;
   outline: none;
-  color: #FEE8D5;
-  border-radius: 50px;
-  padding: 10px 30px;
+  box-shadow: 0.3em 0.3em 0 0 #610C27, inset 0.3em 0.3em 0 0 #610C27;
+  color: #610C27;
+  padding: 15px 30px;
   transition: 200ms;
 }
 .about_container_wrap .about_container .exploreBtn:hover {
   cursor: pointer;
-  padding: 10px 50px;
+  box-shadow: 0 0 0 0 #610C27, inset 6em 3.5em 0 0 #610C27;
+  color: #FEE8D5;
 }
 
 @media screen and (max-width: 1024px) {
