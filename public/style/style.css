@@ -174,22 +174,24 @@ header .navbar_wrap .hire_me_btn:hover {
   transition: 500ms;
 }
 .main_container_wrap .buttons_wrap .designer_btn {
-  background-color: #050505;
-  border: 2px solid #050505;
+  background-color: transparent;
+  box-shadow: 0 0 0 0 #050505, inset 6em 3.5em 0 0 #050505;
   color: #FEE8D5;
 }
 .main_container_wrap .buttons_wrap .designer_btn:hover {
   cursor: pointer;
-  border-radius: 0 30px 30px 0;
+  box-shadow: 0.1em 0.1em 0 0 #050505, inset 0.1em 0.1em 0 0 #050505;
+  color: #050505;
 }
 .main_container_wrap .buttons_wrap .developer_btn {
   background-color: transparent;
-  border: 2px solid #610C27;
+  box-shadow: 0.1em 0.1em 0 0 #610C27, inset 0.1em 0.1em 0 0 #610C27;
   color: #610C27;
 }
 .main_container_wrap .buttons_wrap .developer_btn:hover {
   cursor: pointer;
-  border-radius: 30px 0px 0px 30px;
+  box-shadow: 0 0 0 0 #610C27, inset 6em 3.5em 0 0 #610C27;
+  color: #FEE8D5;
 }
 
 .about_container_wrap {
