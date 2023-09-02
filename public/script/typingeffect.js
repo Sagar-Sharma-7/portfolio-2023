@@ -1,5 +1,3 @@
-//my name is Sagar Sharma and I am a freelance
-// const cursorElement = document.querySelector(".cursor");
 const textElement = document.querySelector(".typingeffect");
 const words = ["Hello World", "My name is Sagar Sharma and I am a freelance"];
 let i = 0;

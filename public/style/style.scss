@@ -296,3 +296,13 @@ header{
         }
     }
 }
+
+@media screen and (max-width:750px){
+    header{
+        .navbar_wrap{
+            .hire_me_btn{
+                display: none;
+            }
+        }
+    }
+}

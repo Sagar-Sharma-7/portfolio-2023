@@ -262,4 +262,9 @@ header .navbar_wrap .hire_me_btn:hover {
   .main_container_wrap .focal_heading_wrap .heading2 {
     font-size: 72px;
   }
+}
+@media screen and (max-width: 750px) {
+  header .navbar_wrap .hire_me_btn {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
