@@ -52,7 +52,7 @@ body {
   justify-content: center;
   text-transform: uppercase;
   font-weight: 900;
-  animation: coverpage 500ms ease-out 700ms forwards;
+  animation: coverpage 1000ms ease-out 700ms forwards;
 }
 .coverpage_wrap .welcome_text {
   font-size: 48px;
@@ -72,7 +72,9 @@ body {
     border-radius: 0;
   }
   100% {
-    top: -100%;
+    top: -200%;
+    left: 100%;
+    border-bottom-left-radius: 100%;
   }
 }
 .container {
@@ -147,9 +149,14 @@ header .navbar_wrap .hire_me_btn:hover {
 }
 
 .main_container_wrap {
+  border: 5px solid green;
   scroll-snap-align: start;
   height: 100vh;
   cursor: default;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .main_container_wrap .main_content {
   min-height: 700px;

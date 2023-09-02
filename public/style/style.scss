@@ -68,7 +68,7 @@ body{
     @include flexbox(center, center);
     text-transform: uppercase;
     font-weight: 900;
-    animation: coverpage 500ms ease-out 700ms forwards;
+    animation: coverpage 1000ms ease-out 700ms forwards;
     .welcome_text{
         font-size: 48px;
         color: $primary-color;
@@ -88,9 +88,9 @@ body{
         border-radius: 0;
     }
     100%{
-        top: -100%;
-        // left: 100%;
-        // border-radius: 50%;
+        top: -200%;
+        left: 100%;
+        border-bottom-left-radius: 100%;
     }
     
 }
@@ -163,10 +163,14 @@ header{
 }
 
 .main_container_wrap{
+    border: 5px solid green;
     scroll-snap-align: start;
     height: 100vh;
     cursor: default;
+    @include flexbox(space-between, space-between);
+    flex-direction: column;
     .main_content{
+        // border: 3px solid red;
         min-height: 700px;
         padding: 0 50px;
         gap:50px;
