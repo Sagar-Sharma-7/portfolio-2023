@@ -163,7 +163,6 @@ header{
 }
 
 .main_container_wrap{
-    border: 5px solid green;
     scroll-snap-align: start;
     height: 100vh;
     cursor: default;
@@ -301,16 +300,22 @@ header{
         }
     }
     .main_container_wrap{
-        .typewriting{
-            font-size: 18px;
-        }
-        .focal_heading_wrap{
-            .focal_heading{
-                font-size: 72px;
-                line-height: 72px;
+        .main_content{
+
+            .typewriting{
+                font-size: 18px;
             }
-            .heading2{
-                font-size: 72px;
+            .focal_heading_wrap{
+                .focal_heading{
+                    font-size: 72px;
+                    line-height: 72px;
+                }
+                .heading2{
+                    font-size: 72px;
+                }
+                .location{
+                    text-align: center;
+                }
             }
         }
     }

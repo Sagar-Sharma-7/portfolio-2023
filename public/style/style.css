@@ -149,7 +149,6 @@ header .navbar_wrap .hire_me_btn:hover {
 }
 
 .main_container_wrap {
-  border: 5px solid green;
   scroll-snap-align: start;
   height: 100vh;
   cursor: default;
@@ -270,15 +269,18 @@ header .navbar_wrap .hire_me_btn:hover {
   header .navbar_wrap .hire_me_btn {
     padding: 6px 16px;
   }
-  .main_container_wrap .typewriting {
+  .main_container_wrap .main_content .typewriting {
     font-size: 18px;
   }
-  .main_container_wrap .focal_heading_wrap .focal_heading {
+  .main_container_wrap .main_content .focal_heading_wrap .focal_heading {
     font-size: 72px;
     line-height: 72px;
   }
-  .main_container_wrap .focal_heading_wrap .heading2 {
+  .main_container_wrap .main_content .focal_heading_wrap .heading2 {
     font-size: 72px;
+  }
+  .main_container_wrap .main_content .focal_heading_wrap .location {
+    text-align: center;
   }
 }
 @media screen and (max-width: 750px) {
