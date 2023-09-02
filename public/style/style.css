@@ -75,6 +75,13 @@ body {
     top: -100%;
   }
 }
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -140,27 +147,30 @@ header .navbar_wrap .hire_me_btn:hover {
 }
 
 .main_container_wrap {
-  height: calc(100vh - 75px);
+  scroll-snap-align: start;
+  height: 100vh;
+  cursor: default;
+}
+.main_container_wrap .main_content {
   min-height: 700px;
+  padding: 0 50px;
+  gap: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  cursor: default;
-  padding: 0 50px;
-  gap: 50px;
 }
-.main_container_wrap .typewriting {
+.main_container_wrap .main_content .typewriting {
   font-size: 24px;
   font-weight: 500;
 }
-.main_container_wrap .focal_heading_wrap .focal_heading {
+.main_container_wrap .main_content .focal_heading_wrap .focal_heading {
   font-size: 96px;
   line-height: 96px;
   text-align: center;
   font-weight: 900;
 }
-.main_container_wrap .focal_heading_wrap .heading2 {
+.main_container_wrap .main_content .focal_heading_wrap .heading2 {
   color: transparent;
   font-size: 96px;
   font-family: "Roboto", sans-serif;
@@ -169,17 +179,17 @@ header .navbar_wrap .hire_me_btn:hover {
   -webkit-text-stroke-color: #610C27;
   transition: 400ms;
 }
-.main_container_wrap .focal_heading_wrap .heading2:hover {
+.main_container_wrap .main_content .focal_heading_wrap .heading2:hover {
   color: #610C27;
 }
-.main_container_wrap .focal_heading_wrap .location {
+.main_container_wrap .main_content .focal_heading_wrap .location {
   font-size: 16px;
   text-align: right;
 }
-.main_container_wrap .buttons_wrap {
+.main_container_wrap .main_content .buttons_wrap {
   margin-top: 4vh;
 }
-.main_container_wrap .buttons_wrap button {
+.main_container_wrap .main_content .buttons_wrap button {
   font-size: 18px;
   border: 0;
   outline: 0;
@@ -187,28 +197,29 @@ header .navbar_wrap .hire_me_btn:hover {
   margin: 5px;
   transition: 500ms;
 }
-.main_container_wrap .buttons_wrap .designer_btn {
+.main_container_wrap .main_content .buttons_wrap .designer_btn {
   background-color: transparent;
   box-shadow: 0 0 0 0 #050505, inset 6em 3.5em 0 0 #050505;
   color: #FEE8D5;
 }
-.main_container_wrap .buttons_wrap .designer_btn:hover {
+.main_container_wrap .main_content .buttons_wrap .designer_btn:hover {
   cursor: pointer;
   box-shadow: 0.1em 0.1em 0 0 #050505, inset 0.1em 0.1em 0 0 #050505;
   color: #050505;
 }
-.main_container_wrap .buttons_wrap .developer_btn {
+.main_container_wrap .main_content .buttons_wrap .developer_btn {
   background-color: transparent;
   box-shadow: 0.1em 0.1em 0 0 #610C27, inset 0.1em 0.1em 0 0 #610C27;
   color: #610C27;
 }
-.main_container_wrap .buttons_wrap .developer_btn:hover {
+.main_container_wrap .main_content .buttons_wrap .developer_btn:hover {
   cursor: pointer;
   box-shadow: 0 0 0 0 #610C27, inset 6em 3.5em 0 0 #610C27;
   color: #FEE8D5;
 }
 
 .about_container_wrap {
+  scroll-snap-align: start;
   background-color: #050505;
   height: 100vh;
   min-height: 700px;
