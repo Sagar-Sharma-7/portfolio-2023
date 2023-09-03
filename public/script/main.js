@@ -4,7 +4,10 @@ const nav = document.querySelector("nav");
 
 $(document).ready(function(){
     $(".hamburger").click(function(){
-        $("nav").slideDown(500)
-        $("nav").css({"display":"flex"})
+        $("nav").slideDown(500);
+        $("nav").css({"display":"flex"});
+    });
+    $("#close_btn").click(function(){
+        $("nav").slideUp(500);
     })
-})
+});
