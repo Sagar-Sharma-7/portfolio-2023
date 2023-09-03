@@ -106,6 +106,9 @@ header .navbar_wrap nav {
   justify-content: center;
   gap: 50px;
 }
+header .navbar_wrap nav #close_btn {
+  display: none;
+}
 header .navbar_wrap nav a {
   font-size: 14px;
   text-decoration: none;
@@ -146,6 +149,13 @@ header .navbar_wrap .hire_me_btn:hover {
   color: #610C27;
   background-color: transparent;
   cursor: pointer;
+}
+header .navbar_wrap .hamburger {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
 }
 
 .main_container_wrap {
@@ -284,7 +294,39 @@ header .navbar_wrap .hire_me_btn:hover {
   }
 }
 @media screen and (max-width: 750px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  header .navbar_wrap .logo {
+    border: 5px solid green;
+  }
   header .navbar_wrap .hire_me_btn {
     display: none;
+  }
+  header .navbar_wrap nav {
+    border: 1px solid pink;
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+    background-color: #050505;
+    flex-direction: column;
+  }
+  header .navbar_wrap nav #close_btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FEE8D5;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  header .navbar_wrap nav a {
+    color: #FEE8D5;
+    font-size: 18px;
+  }
+  header .navbar_wrap .hamburger {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
