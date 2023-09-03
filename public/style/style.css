@@ -204,6 +204,9 @@ header .navbar_wrap .hamburger {
 }
 .main_container_wrap .main_content .buttons_wrap {
   margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main_container_wrap .main_content .buttons_wrap button {
   font-size: 18px;
@@ -304,9 +307,9 @@ header .navbar_wrap .hamburger {
     display: none;
   }
   header .navbar_wrap nav {
-    border: 1px solid pink;
     position: absolute;
-    top: -100%;
+    display: none;
+    top: 0;
     left: 0px;
     width: 100vw;
     height: 100%;
@@ -328,5 +331,21 @@ header .navbar_wrap .hamburger {
   }
   header .navbar_wrap .hamburger {
     display: block;
+  }
+  .main_container_wrap .main_content .typewriting {
+    font-size: 14px;
+  }
+  .main_container_wrap .main_content .focal_heading_wrap .focal_heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .main_container_wrap .main_content .focal_heading_wrap .heading2 {
+    font-size: 60px;
+  }
+  .main_container_wrap .main_content .focal_heading_wrap .location {
+    font-size: 14px;
+  }
+  .main_container_wrap .main_content .buttons_wrap button {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

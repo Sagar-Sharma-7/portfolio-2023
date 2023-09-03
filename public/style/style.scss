@@ -216,6 +216,7 @@ header{
         }
         .buttons_wrap{
             margin-top: 4vh;
+            @include flexbox(center, center);
             button{
                 font-size: 18px;
                 border: 0;
@@ -344,9 +345,9 @@ header{
                 display: none;
             }
             nav{
-                border: 1px solid pink;
                 position: absolute;
-                top: -100%;
+                display: none;
+                top: 0;
                 left: 0px;
                 width: 100vw;
                 height: 100%;
@@ -368,6 +369,30 @@ header{
             }
             .hamburger{
                 display: block;
+            }
+        }
+    }
+    .main_container_wrap{
+        .main_content{
+            .typewriting{
+                font-size: 14px;
+            }
+            .focal_heading_wrap{
+                .focal_heading{
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                .heading2{
+                    font-size: 60px;
+                }
+                .location{
+                    font-size: 14px;
+                }
+            }
+            .buttons_wrap{
+                button{
+                    font-size: 16px;
+                }
             }
         }
     }
