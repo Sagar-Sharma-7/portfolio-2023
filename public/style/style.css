@@ -270,6 +270,61 @@ header .navbar_wrap .hamburger {
   color: #FEE8D5;
 }
 
+.horizontal-hr-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #050505;
+}
+
+#project-hr {
+  border: 1px solid #610C27;
+}
+
+.project_container_wrap {
+  background-color: #050505;
+}
+.project_container_wrap #project_animation svg {
+  display: block;
+  font-size: 10.5em;
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+.project_container_wrap #project_animation .text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+.project_container_wrap #project_animation .text-copy:nth-child(1) {
+  stroke: #610C27;
+  animation-delay: -1;
+}
+.project_container_wrap #project_animation .text-copy:nth-child(2) {
+  stroke: #981942;
+  animation-delay: -2s;
+}
+.project_container_wrap #project_animation .text-copy:nth-child(3) {
+  stroke: #FEE8D5;
+  animation-delay: -3s;
+}
+.project_container_wrap #project_animation .text-copy:nth-child(4) {
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+.project_container_wrap #project_animation .text-copy:nth-child(5) {
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header .navbar_wrap .hire_me_btn {
     padding: 6px 16px;
@@ -287,27 +342,14 @@ header .navbar_wrap .hamburger {
   .main_container_wrap .main_content .focal_heading_wrap .location {
     text-align: center;
   }
-}
-.project_container_wrap #project_animation {
-  top: 0;
-  left: 100%;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  font-size: 30vh;
-  border: 5px solid green;
-  white-space: nowrap;
-  animation: horiScroll 10s linear infinite;
-}
-@keyframes horiScroll {
-  0% {
-    left: 100%;
+  .project_container_wrap #project_animation svg {
+    font-size: 7.5em;
+    width: 750px;
   }
-  100% {
-    left: -100%;
+  .project_container_wrap #project_animation .text-copy {
+    stroke-width: 4px;
   }
 }
-
 @media screen and (max-width: 750px) {
   ::-webkit-scrollbar {
     display: none;
@@ -359,5 +401,12 @@ header .navbar_wrap .hamburger {
   }
   .main_container_wrap .main_content .buttons_wrap button {
     font-size: 16px;
+  }
+  .project_container_wrap #project_animation svg {
+    font-size: 10em;
+    width: 300px;
+  }
+  .project_container_wrap #project_animation .text-copy {
+    stroke-width: 4px;
   }
 }/*# sourceMappingURL=style.css.map */
