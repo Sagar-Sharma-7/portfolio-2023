@@ -95,12 +95,12 @@ body{
     
 }
 
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height:100vh;
-    overflow-x: hidden;
-}
+// .container{
+//     // scroll-snap-type: y mandatory;
+//     overflow-y: scroll;
+//     height:100vh;
+//     overflow-x: hidden;
+// }
 
 header{
     @include flexbox(center, center);
@@ -173,7 +173,7 @@ header{
 }
 
 .main_container_wrap{
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
     height: 100vh;
     cursor: default;
     @include flexbox(space-between, space-between);
@@ -302,6 +302,8 @@ header{
     }
 }
 
+
+
 @media screen and (max-width:1024px){
     header{
         .navbar_wrap{
@@ -331,6 +333,30 @@ header{
         }
     }
 }
+
+.project_container_wrap{
+    #project_animation{
+        top: 0;
+        left: 100%;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        font-size: 30vh;
+        border: 5px solid green;
+        white-space: nowrap;
+        animation: horiScroll 10s linear infinite;
+
+        @keyframes horiScroll{
+            0% {
+              left: 100%;
+            }
+            100% {
+              left: -100%
+            }
+          }
+    }
+}
+
 
 @media screen and (max-width:750px){
     ::-webkit-scrollbar{
