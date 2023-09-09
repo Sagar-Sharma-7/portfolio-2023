@@ -312,7 +312,7 @@ header{
 }
 
 .project_container_wrap{
-    background-color: $secondary-color;
+    background-color: $primary-color;
     // border: 1px solid green;
     #project_animation{
         // font-size: 20px;    
@@ -343,7 +343,7 @@ header{
         }
         
         .text-copy:nth-child(3){
-          stroke: $primary-color;
+          stroke: $secondary-color;
           animation-delay: -3s;
         }
         
@@ -412,6 +412,14 @@ header{
 @media screen and (max-width:750px){
     ::-webkit-scrollbar{
         display: none;
+    }
+    .coverpage_wrap{
+        .welcome_text{
+            font-size: 36px;
+        }
+        .portfolio_text{
+            font-size: 60px;
+        }
     }
     header{
         .navbar_wrap{

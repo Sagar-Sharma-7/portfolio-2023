@@ -282,7 +282,7 @@ header .navbar_wrap .hamburger {
 }
 
 .project_container_wrap {
-  background-color: #050505;
+  background-color: #FEE8D5;
 }
 .project_container_wrap #project_animation svg {
   display: block;
@@ -308,7 +308,7 @@ header .navbar_wrap .hamburger {
   animation-delay: -2s;
 }
 .project_container_wrap #project_animation .text-copy:nth-child(3) {
-  stroke: #FEE8D5;
+  stroke: #050505;
   animation-delay: -3s;
 }
 .project_container_wrap #project_animation .text-copy:nth-child(4) {
@@ -353,6 +353,12 @@ header .navbar_wrap .hamburger {
 @media screen and (max-width: 750px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+  .coverpage_wrap .welcome_text {
+    font-size: 36px;
+  }
+  .coverpage_wrap .portfolio_text {
+    font-size: 60px;
   }
   header .navbar_wrap .logo {
     border: 5px solid green;
