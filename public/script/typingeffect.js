@@ -1,7 +1,11 @@
 const textElement = document.querySelector(".typingeffect");
-const words = ["Hello World", "My name is Sagar Sharma and I am a freelance"];
+let words = ["Hello World", "My name is Sagar Sharma and I am a freelance"];
 let i = 0;
 let timer;
+
+if(window.innerWidth < 450){
+	words = ["Hello World", "My name is Sagar Sharma"]
+}
 
 function typingEffect() {
 	let word = words[i].split("");

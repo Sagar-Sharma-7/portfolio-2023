@@ -406,7 +406,13 @@ header .navbar_wrap .hamburger {
     font-size: 14px;
   }
   .main_container_wrap .main_content .buttons_wrap button {
-    font-size: 16px;
+    font-size: 12px;
+  }
+  .main_container_wrap .main_content .buttons_wrap .designer_btn {
+    box-shadow: 0 0 0 0 #050505, inset 6em 4em 0 0 #050505;
+  }
+  .main_container_wrap .main_content .buttons_wrap .developer_btn:hover {
+    box-shadow: 0 0 0 0 #610C27, inset 6em 4em 0 0 #610C27;
   }
   .project_container_wrap #project_animation svg {
     font-size: 10em;

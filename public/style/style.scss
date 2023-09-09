@@ -476,7 +476,19 @@ header{
             }
             .buttons_wrap{
                 button{
-                    font-size: 16px;
+                    font-size: 12px;
+                }
+                .designer_btn{
+                    box-shadow: 
+                    0 0 0 0 $secondary-color,
+                    inset 6em 4em 0 0 $secondary-color;
+                }
+                .developer_btn{
+                    &:hover{
+                        box-shadow: 
+                        0 0 0 0 $accent-color,
+                        inset 6em 4em 0 0 $accent-color;
+                    }
                 }
             }
         }
