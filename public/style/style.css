@@ -43,7 +43,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  z-index: 9999;
+  z-index: 1;
   background-color: #050505;
   font-family: "Roboto", sans-serif;
   flex-direction: column;
@@ -54,29 +54,36 @@ body {
   font-weight: 900;
   animation: coverpage 1000ms ease-out 700ms forwards;
 }
-.coverpage_wrap .welcome_text {
+.coverpage_wrap .hide {
+  overflow: hidden;
+}
+.coverpage_wrap .hide h1 {
+  transform: translateY(100%);
+}
+.coverpage_wrap .hide .welcome_text {
   font-size: 48px;
   color: #FEE8D5;
 }
-.coverpage_wrap .portfolio_text {
+.coverpage_wrap .hide .portfolio_text {
   color: transparent;
   font-size: 84px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #610C27;
 }
 
-@keyframes coverpage {
-  0% {
-    top: 0;
-    left: 0;
-    border-radius: 0;
-  }
-  100% {
-    top: -200%;
-    left: 100%;
-    border-bottom-left-radius: 100%;
-  }
+.slider {
+  z-index: 2;
+  position: absolute;
+  background-color: #610C27;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(100%);
 }
+
+.container {
+  background-color: #FEE8D5;
+}
+
 header {
   display: flex;
   align-items: center;
