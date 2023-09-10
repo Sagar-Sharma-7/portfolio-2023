@@ -37,3 +37,8 @@ $(document).ready(function(){
     })
 });
 
+$(document).ready(function(){
+    $(".nav-link").click(function(){
+        $("nav").slideUp(500);
+    })
+})
