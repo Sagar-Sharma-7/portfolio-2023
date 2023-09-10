@@ -100,6 +100,9 @@ header .navbar_wrap {
   max-width: 1440px;
   font-weight: 400;
 }
+header .navbar_wrap .logo img {
+  height: 50px;
+}
 header .navbar_wrap nav {
   display: flex;
   align-items: center;
@@ -289,7 +292,7 @@ header .navbar_wrap .hamburger {
 }
 
 .project_container_wrap {
-  background-color: #FEE8D5;
+  background-color: #050505;
 }
 .project_container_wrap #project_animation svg {
   display: block;
@@ -367,8 +370,8 @@ header .navbar_wrap .hamburger {
   .coverpage_wrap .hide .portfolio_text {
     font-size: 60px;
   }
-  header .navbar_wrap .logo {
-    border: 5px solid green;
+  header {
+    padding: 0 25px;
   }
   header .navbar_wrap .hire_me_btn {
     display: none;
@@ -420,6 +423,9 @@ header .navbar_wrap .hamburger {
   }
   .main_container_wrap .main_content .buttons_wrap .developer_btn:hover {
     box-shadow: 0 0 0 0 #610C27, inset 6em 4em 0 0 #610C27;
+  }
+  .about_container_wrap .about_container {
+    width: 80vw;
   }
   .project_container_wrap #project_animation svg {
     font-size: 10em;
