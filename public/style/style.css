@@ -163,6 +163,7 @@ header .navbar_wrap .hamburger {
 
 .main_container_wrap {
   height: 100vh;
+  min-height: 700px;
   cursor: default;
   display: flex;
   align-items: space-between;
@@ -220,7 +221,7 @@ header .navbar_wrap .hamburger {
 }
 .main_container_wrap .main_content .buttons_wrap .designer_btn {
   background-color: transparent;
-  box-shadow: 0 0 0 0 #050505, inset 6em 3.5em 0 0 #050505;
+  box-shadow: 0.1em 0.1em 0 0 #050505, inset 6em 3.5em 0 0 #050505;
   color: #FEE8D5;
 }
 .main_container_wrap .main_content .buttons_wrap .designer_btn:hover {
@@ -314,7 +315,7 @@ header .navbar_wrap .hamburger {
   animation-delay: -1;
 }
 .project_container_wrap #project_animation .text-copy:nth-child(2) {
-  stroke: #981942;
+  stroke: #FEE8D5;
   animation-delay: -2s;
 }
 .project_container_wrap #project_animation .text-copy:nth-child(3) {
@@ -416,7 +417,7 @@ header .navbar_wrap .hamburger {
     font-size: 14px;
   }
   .main_container_wrap .main_content .buttons_wrap button {
-    font-size: 12px;
+    font-size: 16px;
   }
   .main_container_wrap .main_content .buttons_wrap .designer_btn {
     box-shadow: 0 0 0 0 #050505, inset 6em 4em 0 0 #050505;

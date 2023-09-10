@@ -196,6 +196,7 @@ header{
 .main_container_wrap{
     // scroll-snap-align: start;
     height: 100vh;
+    min-height: 700px;
     cursor: default;
     @include flexbox(space-between, space-between);
     flex-direction: column;
@@ -249,7 +250,7 @@ header{
             .designer_btn{
                 background-color: transparent;
                 box-shadow: 
-                0 0 0 0 $secondary-color,
+                0.1em 0.1em 0 0 $secondary-color,
                 inset 6em 3.5em 0 0 $secondary-color;
                 color: $primary-color;
                 &:hover{
@@ -359,7 +360,7 @@ header{
         }
         
         .text-copy:nth-child(2){
-          stroke: #981942;
+          stroke: $primary-color;
           animation-delay: -2s;
         }
         
@@ -498,7 +499,7 @@ header{
             }
             .buttons_wrap{
                 button{
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 .designer_btn{
                     box-shadow: 
