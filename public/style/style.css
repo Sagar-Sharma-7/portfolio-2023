@@ -361,10 +361,10 @@ header .navbar_wrap .hamburger {
   ::-webkit-scrollbar {
     display: none;
   }
-  .coverpage_wrap .welcome_text {
+  .coverpage_wrap .hide .welcome_text {
     font-size: 36px;
   }
-  .coverpage_wrap .portfolio_text {
+  .coverpage_wrap .hide .portfolio_text {
     font-size: 60px;
   }
   header .navbar_wrap .logo {

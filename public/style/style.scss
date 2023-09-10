@@ -430,11 +430,14 @@ header{
         display: none;
     }
     .coverpage_wrap{
-        .welcome_text{
-            font-size: 36px;
-        }
-        .portfolio_text{
-            font-size: 60px;
+        .hide{
+
+            .welcome_text{
+                font-size: 36px;
+            }
+            .portfolio_text{
+                font-size: 60px;
+            }
         }
     }
     header{
