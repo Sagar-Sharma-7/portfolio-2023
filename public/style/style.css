@@ -396,12 +396,18 @@ header .navbar_wrap .hamburger {
     font-size: 24px;
     margin-top: 20px;
   }
+  header .navbar_wrap nav #close_btn:hover {
+    cursor: pointer;
+  }
   header .navbar_wrap nav a {
     color: #FEE8D5;
     font-size: 18px;
   }
   header .navbar_wrap .hamburger {
     display: block;
+  }
+  header .navbar_wrap .hamburger:hover {
+    cursor: pointer;
   }
   .main_container_wrap .main_content .typewriting {
     font-size: 16px;

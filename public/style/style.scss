@@ -189,6 +189,7 @@ header{
                 outline: none;
                 background-color: transparent;
                 font-size: 24px;
+
             }
     }
 }
@@ -469,6 +470,9 @@ header{
                     color: $primary-color;
                     font-size: 24px;
                     margin-top: 20px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 a{
                     color: $primary-color;
@@ -477,6 +481,9 @@ header{
             }
             .hamburger{
                 display: block;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
