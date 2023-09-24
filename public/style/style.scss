@@ -390,8 +390,26 @@ header{
         // min-height: 2100px;
         color: $primary-color;
         display: flex;
-        div{
-            border: 2px solid green;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        min-height: 700px;
+        border: 1px solid red;
+        padding: 20px 20px;
+        .projects-wrap{
+            border: 1px solid green;
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            overflow-y: scroll;
+            .projects{
+                height: 100%;
+                border: 1px solid yellow;
+            }
+            &::-webkit-scrollbar {
+                
+                display: none;
+            }
         }
         
     }

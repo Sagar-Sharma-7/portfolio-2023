@@ -338,9 +338,26 @@ header .navbar_wrap .hamburger {
 .project_container_wrap .project_collection {
   color: #FEE8D5;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 700px;
+  border: 1px solid red;
+  padding: 20px 20px;
 }
-.project_container_wrap .project_collection div {
-  border: 2px solid green;
+.project_container_wrap .project_collection .projects-wrap {
+  border: 1px solid green;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.project_container_wrap .project_collection .projects-wrap .projects {
+  height: 100%;
+  border: 1px solid yellow;
+}
+.project_container_wrap .project_collection .projects-wrap::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
