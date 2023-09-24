@@ -335,6 +335,13 @@ header .navbar_wrap .hamburger {
     stroke-dashoffset: -35%;
   }
 }
+.project_container_wrap .project_collection {
+  color: #FEE8D5;
+  display: flex;
+}
+.project_container_wrap .project_collection div {
+  border: 2px solid green;
+}
 
 @media screen and (max-width: 1024px) {
   header .navbar_wrap .hire_me_btn {

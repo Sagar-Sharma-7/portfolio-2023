@@ -39,6 +39,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".nav-link").click(function(){
-        $("nav").slideUp(500);
+        if(screen.width <= 750){
+            $("nav").slideUp(500);
+        }
     })
 })

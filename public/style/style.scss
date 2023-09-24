@@ -337,6 +337,7 @@ header{
 .project_container_wrap{
     background-color: $secondary-color;
     // border: 1px solid green;
+
     #project_animation{
         // font-size: 20px;    
         svg {
@@ -384,7 +385,19 @@ header{
           100% {stroke-dashoffset: -35%;}
         }
     }
+    .project_collection{
+        // height: 300vh;
+        // min-height: 2100px;
+        color: $primary-color;
+        display: flex;
+        div{
+            border: 2px solid green;
+        }
+        
+    }
 }
+
+
 
 
 
