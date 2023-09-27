@@ -335,30 +335,6 @@ header .navbar_wrap .hamburger {
     stroke-dashoffset: -35%;
   }
 }
-.project_container_wrap .project_collection {
-  color: #FEE8D5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  min-height: 700px;
-  border: 1px solid red;
-  padding: 20px 20px;
-}
-.project_container_wrap .project_collection .projects-wrap {
-  border: 1px solid green;
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  overflow-y: scroll;
-}
-.project_container_wrap .project_collection .projects-wrap .projects {
-  height: 100%;
-  border: 1px solid yellow;
-}
-.project_container_wrap .project_collection .projects-wrap::-webkit-scrollbar {
-  display: none;
-}
 
 @media screen and (max-width: 1024px) {
   header .navbar_wrap .hire_me_btn {
@@ -376,13 +352,6 @@ header .navbar_wrap .hamburger {
   }
   .main_container_wrap .main_content .focal_heading_wrap .location {
     text-align: center;
-  }
-  .project_container_wrap #project_animation svg {
-    font-size: 7.5em;
-    width: 750px;
-  }
-  .project_container_wrap #project_animation .text-copy {
-    stroke-width: 4px;
   }
 }
 @media screen and (max-width: 750px) {

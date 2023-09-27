@@ -42,5 +42,6 @@ $(document).ready(function(){
         if(screen.width <= 750){
             $("nav").slideUp(500);
         }
-    })
-})
+    });
+});
+

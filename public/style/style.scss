@@ -385,34 +385,7 @@ header{
           100% {stroke-dashoffset: -35%;}
         }
     }
-    .project_collection{
-        // height: 300vh;
-        // min-height: 2100px;
-        color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        min-height: 700px;
-        border: 1px solid red;
-        padding: 20px 20px;
-        .projects-wrap{
-            border: 1px solid green;
-            width: 100%;
-            max-width: 1200px;
-            height: 100%;
-            overflow-y: scroll;
-            .projects{
-                height: 100%;
-                border: 1px solid yellow;
-            }
-            &::-webkit-scrollbar {
-                
-                display: none;
-            }
-        }
-        
-    }
+
 }
 
 
@@ -444,17 +417,6 @@ header{
                 .location{
                     text-align: center;
                 }
-            }
-        }
-    }
-    .project_container_wrap{
-        #project_animation{
-            svg{
-                font-size: 7.5em;
-                width: 750px;
-            }
-            .text-copy{
-                stroke-width: 4px;
             }
         }
     }
