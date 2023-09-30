@@ -285,7 +285,8 @@ header{
 
 .about_container_wrap{
     scroll-snap-align: start;
-    background-color: $secondary-color;
+    background-color: $primary-color;
+    color: $secondary-color;
     height: 100vh;
     min-height: 700px;
     width: 100vw;
@@ -299,7 +300,6 @@ header{
         @include flexbox(center, space-evenly);
         flex-direction: column;
         .description{
-            color: $primary-color;
             text-align: center;
             font-size: 16px;
         }
@@ -331,61 +331,6 @@ header{
 
 #project-hr{
     border: 1px solid #610C27;
-    
-}
-
-.project_container_wrap{
-    background-color: $secondary-color;
-    // border: 1px solid green;
-
-    #project_animation{
-        // font-size: 20px;    
-        svg {
-            display: block;
-            font-size: 10.5em;
-            width: 960px;
-            height: 300px;
-            margin: 0 auto;
-        }
-        .text-copy {
-            fill: none;
-            stroke: white;
-            stroke-dasharray: 6% 29%;
-            stroke-width: 5px;
-            stroke-dashoffset: 0%;
-            animation: stroke-offset 5.5s infinite linear;
-        }
-        
-        .text-copy:nth-child(1){
-          stroke: $accent-color;
-          animation-delay: -1;
-        }
-        
-        .text-copy:nth-child(2){
-          stroke: $primary-color;
-          animation-delay: -2s;
-        }
-        
-        .text-copy:nth-child(3){
-          stroke: $secondary-color;
-          animation-delay: -3s;
-        }
-        
-        .text-copy:nth-child(4){
-          stroke: #BD0034;
-          animation-delay: -4s;
-        }
-        
-        .text-copy:nth-child(5){
-          stroke: #FDB731;
-          animation-delay: -5s;
-        }
-        
-        @keyframes stroke-offset{
-          100% {stroke-dashoffset: -35%;}
-        }
-    }
-
 }
 
 
@@ -520,17 +465,6 @@ header{
     .about_container_wrap{
         .about_container{
             width: 80vw;
-        }
-    }
-    .project_container_wrap{
-        #project_animation{
-            svg{
-                font-size: 10em;
-                width: 300px;
-            }
-            .text-copy{
-                stroke-width: 4px;
-            }
         }
     }
 }

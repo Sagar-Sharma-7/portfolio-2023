@@ -242,7 +242,8 @@ header .navbar_wrap .hamburger {
 
 .about_container_wrap {
   scroll-snap-align: start;
-  background-color: #050505;
+  background-color: #FEE8D5;
+  color: #050505;
   height: 100vh;
   min-height: 700px;
   width: 100vw;
@@ -262,7 +263,6 @@ header .navbar_wrap .hamburger {
   flex-direction: column;
 }
 .about_container_wrap .about_container .description {
-  color: #FEE8D5;
   text-align: center;
   font-size: 16px;
 }
@@ -290,50 +290,6 @@ header .navbar_wrap .hamburger {
 
 #project-hr {
   border: 1px solid #610C27;
-}
-
-.project_container_wrap {
-  background-color: #050505;
-}
-.project_container_wrap #project_animation svg {
-  display: block;
-  font-size: 10.5em;
-  width: 960px;
-  height: 300px;
-  margin: 0 auto;
-}
-.project_container_wrap #project_animation .text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-.project_container_wrap #project_animation .text-copy:nth-child(1) {
-  stroke: #610C27;
-  animation-delay: -1;
-}
-.project_container_wrap #project_animation .text-copy:nth-child(2) {
-  stroke: #FEE8D5;
-  animation-delay: -2s;
-}
-.project_container_wrap #project_animation .text-copy:nth-child(3) {
-  stroke: #050505;
-  animation-delay: -3s;
-}
-.project_container_wrap #project_animation .text-copy:nth-child(4) {
-  stroke: #BD0034;
-  animation-delay: -4s;
-}
-.project_container_wrap #project_animation .text-copy:nth-child(5) {
-  stroke: #FDB731;
-  animation-delay: -5s;
-}
-@keyframes stroke-offset {
-  100% {
-    stroke-dashoffset: -35%;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -426,12 +382,5 @@ header .navbar_wrap .hamburger {
   }
   .about_container_wrap .about_container {
     width: 80vw;
-  }
-  .project_container_wrap #project_animation svg {
-    font-size: 10em;
-    width: 300px;
-  }
-  .project_container_wrap #project_animation .text-copy {
-    stroke-width: 4px;
   }
 }/*# sourceMappingURL=style.css.map */
