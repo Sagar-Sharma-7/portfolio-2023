@@ -1,4 +1,4 @@
-export * from "/../../node_modules/gsap/ScrollTrigger.js";
+// export * from "/../../node_modules/gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
 // REVEAL //
