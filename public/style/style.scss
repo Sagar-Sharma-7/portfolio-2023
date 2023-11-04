@@ -19,7 +19,7 @@ $accent-color: #610C27;
 /* Customize scrollbar width */
 ::-webkit-scrollbar {
     width: 7px;
-    // display: none;
+    display: none;
 }
   
 /* Customize scrollbar track */
@@ -50,9 +50,35 @@ body{
     // padding: 0 50px;
     background-color: $primary-color;
     overflow-x: hidden;
+    cursor: none; 
 
 }
 
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid $accent-color;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .grow, .grow-small{
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference; 
+    border: none;
+  }
+  
+  .grow-small{
+    transform: scale(2);
+  }
+  
 .coverpage_wrap{
     position: absolute;
     top: 0;
@@ -116,6 +142,8 @@ body{
 
 .container{
     background-color: $primary-color;
+    cursor: none; 
+
 }
 
 header{
@@ -196,9 +224,10 @@ header{
 
 .main_container_wrap{
     // scroll-snap-align: start;
+
     height: 100vh;
     min-height: 700px;
-    cursor: default;
+    cursor: none;
     @include flexbox(space-between, space-between);
     flex-direction: column;
     .main_content{
@@ -331,6 +360,39 @@ header{
 
 #project-hr{
     border: 1px solid #610C27;
+}
+
+.project-section-wrap{
+    background-color: $secondary-color;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid green;
+}
+
+.contact-section-wrap{
+    height: 100vh;
+    min-height: 600px;
+    background-color: $secondary-color;
+    width: 130vw;
+    .contact-top{
+        background-color: $secondary-color;
+        color: $primary-color;
+        height: 40%;
+        p{
+            font-size: 108px;
+        }
+    }
+    .contact-bottom{
+        background-color: $primary-color;
+        color: $secondary-color;
+        height: 60%;
+        border-radius: 100% 100% 0 0;
+        width: 130vw;
+        margin-left: -15vw;
+        padding-left: 15vw;
+        padding-top: 6%;
+        border: 1px solid blue;
+    }
 }
 
 

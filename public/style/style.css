@@ -8,6 +8,7 @@
 /* Customize scrollbar width */
 ::-webkit-scrollbar {
   width: 7px;
+  display: none;
 }
 
 /* Customize scrollbar track */
@@ -34,6 +35,32 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #FEE8D5;
   overflow-x: hidden;
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #610C27;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow, .grow-small {
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(2);
 }
 
 .coverpage_wrap {
@@ -82,6 +109,7 @@ body {
 
 .container {
   background-color: #FEE8D5;
+  cursor: none;
 }
 
 header {
@@ -164,7 +192,7 @@ header .navbar_wrap .hamburger {
 .main_container_wrap {
   height: 100vh;
   min-height: 700px;
-  cursor: default;
+  cursor: none;
   display: flex;
   align-items: space-between;
   justify-content: space-between;
@@ -290,6 +318,39 @@ header .navbar_wrap .hamburger {
 
 #project-hr {
   border: 1px solid #610C27;
+}
+
+.project-section-wrap {
+  background-color: #050505;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid green;
+}
+
+.contact-section-wrap {
+  height: 100vh;
+  min-height: 600px;
+  background-color: #050505;
+  width: 130vw;
+}
+.contact-section-wrap .contact-top {
+  background-color: #050505;
+  color: #FEE8D5;
+  height: 40%;
+}
+.contact-section-wrap .contact-top p {
+  font-size: 108px;
+}
+.contact-section-wrap .contact-bottom {
+  background-color: #FEE8D5;
+  color: #050505;
+  height: 60%;
+  border-radius: 100% 100% 0 0;
+  width: 130vw;
+  margin-left: -15vw;
+  padding-left: 15vw;
+  padding-top: 6%;
+  border: 1px solid blue;
 }
 
 @media screen and (max-width: 1024px) {
