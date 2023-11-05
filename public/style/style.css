@@ -40,8 +40,8 @@ body {
 
 .cursor {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   margin-left: -20px;
   margin-top: -20px;
   border-radius: 50%;
@@ -53,7 +53,7 @@ body {
 }
 
 .grow, .grow-small {
-  transform: scale(4);
+  transform: scale(3);
   background: white;
   mix-blend-mode: difference;
   border: none;
@@ -309,6 +309,30 @@ header .navbar_wrap .hamburger {
   color: #FEE8D5;
 }
 
+.explore-more-page {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background-color: #050505;
+  color: #FEE8D5;
+  padding: 10%;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.explore-more-page div {
+  width: 50%;
+}
+.explore-more-page .about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .horizontal-hr-wrap {
   display: flex;
   align-items: center;
@@ -325,32 +349,6 @@ header .navbar_wrap .hamburger {
   width: 100vw;
   height: 100vh;
   border: 1px solid green;
-}
-
-.contact-section-wrap {
-  height: 100vh;
-  min-height: 600px;
-  background-color: #050505;
-  width: 130vw;
-}
-.contact-section-wrap .contact-top {
-  background-color: #050505;
-  color: #FEE8D5;
-  height: 40%;
-}
-.contact-section-wrap .contact-top p {
-  font-size: 108px;
-}
-.contact-section-wrap .contact-bottom {
-  background-color: #FEE8D5;
-  color: #050505;
-  height: 60%;
-  border-radius: 100% 100% 0 0;
-  width: 130vw;
-  margin-left: -15vw;
-  padding-left: 15vw;
-  padding-top: 6%;
-  border: 1px solid blue;
 }
 
 @media screen and (max-width: 1024px) {

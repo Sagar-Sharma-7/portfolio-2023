@@ -56,8 +56,8 @@ body{
 
 .cursor{
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin-left: -20px;
     margin-top: -20px;
     border-radius: 50%;
@@ -69,7 +69,7 @@ body{
   }
   
   .grow, .grow-small{
-    transform: scale(4);
+    transform: scale(3);
     background: white;
     mix-blend-mode: difference; 
     border: none;
@@ -353,6 +353,28 @@ header{
         }
     }
 }
+.explore-more-page{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 50%;
+    }
+    .about{
+        @include flexbox(flex-start, center);
+        flex-direction: column;
+        gap: 24px;
+
+    }
+}
 .horizontal-hr-wrap{
     @include flexbox(center, center);
     background-color: $secondary-color
@@ -367,32 +389,6 @@ header{
     width: 100vw;
     height: 100vh;
     border: 1px solid green;
-}
-
-.contact-section-wrap{
-    height: 100vh;
-    min-height: 600px;
-    background-color: $secondary-color;
-    width: 130vw;
-    .contact-top{
-        background-color: $secondary-color;
-        color: $primary-color;
-        height: 40%;
-        p{
-            font-size: 108px;
-        }
-    }
-    .contact-bottom{
-        background-color: $primary-color;
-        color: $secondary-color;
-        height: 60%;
-        border-radius: 100% 100% 0 0;
-        width: 130vw;
-        margin-left: -15vw;
-        padding-left: 15vw;
-        padding-top: 6%;
-        border: 1px solid blue;
-    }
 }
 
 
