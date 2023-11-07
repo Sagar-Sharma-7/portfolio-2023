@@ -393,14 +393,9 @@ header{
             @keyframes rotate {
                 0%{
                     transform: rotate(0deg);
-                    margin-top: 0px;
-                }
-                50%{
-                    margin-top: 10%;
                 }
                 100%{
                     transform: rotate(360deg);
-                    margin-top: 0px;
                 }
             }
             @keyframes drop {
@@ -408,8 +403,8 @@ header{
                     transform: rotate(0deg);
                     margin-top: 0px;
                 }
-                50%{
-                    margin-top: 20%;
+                20%{
+                    margin-top: 30%;
                 }
                 100%{
                     transform: rotate(360deg);
@@ -432,7 +427,62 @@ header{
     background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
-    border: 1px solid green;
+    // border: 1px solid green;
+    overflow: hidden;
+    .horizontal-scroll-wrapper{
+        width: 100vw;
+        height: 100vh;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // transform: rotate(-90deg) translate3d(0,-200vh,0);
+        transform-origin: right top;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        // padding-bottom: 10rem;
+        h1{
+            color: $primary-color;
+            padding: 50vh;
+        }
+        .img-wrapper {
+            transform: rotate(90deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            transform-origin: 50% 50%;
+            transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+            transition: 1s;
+
+            img {
+                max-width: 45vh;
+                max-height: 50vh;
+                transition: .5s;
+                vertical-align: top;
+                // filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+                // filter: grayscale(90%);
+                &:hover{
+                    filter: none;
+                    transform: rotate(-90deg);
+                }
+              }
+          }
+          
+          .img-wrapper:hover {
+           min-height: 65vh;
+          }
+          
+          .slower {
+            transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+          }
+          .faster {
+            transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+          }
+    }
 }
 
 
