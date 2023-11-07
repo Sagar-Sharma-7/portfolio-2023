@@ -1,6 +1,10 @@
 const hamburgerBtn = document.querySelector(".hamburger");
 const closeBtn = document.querySelector("#close_btn");
 const nav = document.querySelector("nav");
+const exploreMoreSection = document.querySelector(".explore-more-page");
+const exploreBtn = document.querySelector(".exploreBtn");
+const exploreCloseBtn = document.querySelector(".close-btn");
+
 
 // gsap
 const tl = gsap.timeline({
@@ -44,6 +48,18 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// explore more section
+$(document).ready(function(){
+    $(".exploreBtn").click(function(){
+        $(".explore-more-page").slideDown(1000);
+        $(".explore-more-page").css({"display":"flex"});
+    });
+    $(".close-btn").click(function(){
+        $(".explore-more-page").slideUp(500);
+    });
+})
 
 
 

@@ -332,6 +332,52 @@ header .navbar_wrap .hamburger {
   flex-direction: column;
   gap: 24px;
 }
+.explore-more-page .close-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore-more-page .close-btn-wrap .close-btn {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #FEE8D5;
+  background-color: #610C27;
+  animation: rotate 3s ease-in infinite;
+  animation: drop 2s ease-in infinite;
+  cursor: pointer;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10%;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-top: 0px;
+  }
+}
+@keyframes drop {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 20%;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-top: 0%;
+  }
+}
 
 .horizontal-hr-wrap {
   display: flex;
