@@ -59,10 +59,6 @@ body {
   border: none;
 }
 
-.grow-small {
-  transform: scale(2);
-}
-
 .coverpage_wrap {
   position: absolute;
   top: 0;
@@ -381,10 +377,6 @@ header .navbar_wrap .hamburger {
   background-color: #050505;
 }
 
-#project-hr {
-  border: 1px solid #610C27;
-}
-
 .project-section-wrap {
   background-color: #050505;
   width: 100vw;
@@ -403,10 +395,13 @@ header .navbar_wrap .hamburger {
   padding: 0;
   perspective: 1px;
   transform-style: preserve-3d;
+  padding-bottom: 10rem;
 }
 .project-section-wrap .horizontal-scroll-wrapper h1 {
   color: #FEE8D5;
-  padding: 50vh;
+  margin: 50vh;
+  transform: scale(2);
+  transition: 500ms;
 }
 .project-section-wrap .horizontal-scroll-wrapper .img-wrapper {
   transform: rotate(90deg);

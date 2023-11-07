@@ -47,7 +47,6 @@ html{
 
 body{
     font-family: 'Nunito Sans', sans-serif;
-    // padding: 0 50px;
     background-color: $primary-color;
     overflow-x: hidden;
     cursor: none; 
@@ -73,10 +72,6 @@ body{
     background: white;
     mix-blend-mode: difference; 
     border: none;
-  }
-  
-  .grow-small{
-    transform: scale(2);
   }
   
 .coverpage_wrap{
@@ -126,19 +121,6 @@ body{
     transform: translateY(100%);
 }
 
-// @keyframes coverpage {
-//     0%{
-//         top: 0;
-//         left: 0;
-//         border-radius: 0;
-//     }
-//     100%{
-//         top: -200%;
-//         left: 100%;
-//         border-bottom-left-radius: 100%;
-//     }
-    
-// }
 
 .container{
     background-color: $primary-color;
@@ -419,34 +401,30 @@ header{
     background-color: $secondary-color
 }
 
-#project-hr{
-    border: 1px solid #610C27;
-}
 
 .project-section-wrap{
     background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
-    // border: 1px solid green;
     overflow: hidden;
     .horizontal-scroll-wrapper{
         width: 100vw;
         height: 100vh;
-        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // transform: rotate(-90deg) translate3d(0,-200vh,0);
         transform-origin: right top;
         overflow-y: auto;
         overflow-x: hidden;
         padding: 0;
         perspective: 1px;
         transform-style: preserve-3d;
-        // padding-bottom: 10rem;
+        padding-bottom: 10rem;
         h1{
             color: $primary-color;
-            padding: 50vh;
+            margin: 50vh;
+            transform: scale(2);
+            transition: 500ms;
         }
         .img-wrapper {
             transform: rotate(90deg);
@@ -463,8 +441,6 @@ header{
                 max-height: 50vh;
                 transition: .5s;
                 vertical-align: top;
-                // filter: saturate(40%) sepia(30%) hue-rotate(5deg);
-                // filter: grayscale(90%);
                 &:hover{
                     filter: none;
                     transform: rotate(-90deg);
@@ -473,7 +449,7 @@ header{
           }
           
           .img-wrapper:hover {
-           min-height: 65vh;
+                min-height: 65vh;
           }
           
           .slower {
