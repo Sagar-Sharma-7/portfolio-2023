@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,900&family=Nunito:wght@900&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 $primary-color: #FEE8D5;
 $secondary-color: #050505;
@@ -237,7 +238,6 @@ header{
                 -webkit-text-stroke-width: 2px;
                 font-weight: 900;
                 -webkit-text-stroke-color: $accent-color;
-                // -webkit-text-fill-color: transparent; 
                 transition: 400ms;
                 &:hover{
                     color: $accent-color;
@@ -347,6 +347,8 @@ header{
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
+    cursor: default;
     div{
         width: 50%;
     }
@@ -405,11 +407,11 @@ header{
 .project-section-wrap{
     background-color: $secondary-color;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     overflow: hidden;
     .horizontal-scroll-wrapper{
         width: 100vw;
-        height: 100vh;
+        height: 200vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -419,12 +421,23 @@ header{
         padding: 0;
         perspective: 1px;
         transform-style: preserve-3d;
-        padding-bottom: 10rem;
+        // padding-bottom: 10rem;
         h1{
             color: $primary-color;
             margin: 50vh;
             transform: scale(2);
             transition: 500ms;
+        }
+        h5{
+            color: $primary-color;
+            margin-top: 20vh;
+            margin-bottom: 50vh;
+            transform: scale(2);
+            transition: 500ms;
+            a{
+                color: $accent-color;
+                text-decoration: none;
+            }
         }
         .img-wrapper {
             transform: rotate(90deg);
@@ -461,41 +474,56 @@ header{
     }
 }
 
+.contact-section{
+    height: 100vh;
+    background-color: $secondary-color;
+    // border: 1px solid red;
+    @include flexbox(center, center);
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    .first-line, .second-line, .third-line{
+        // border: 1px solid blue;
+        width: 100vw;
+        color: $primary-color;
+        text-align: center;
+    }
 
-
-
-
-@media screen and (max-width:1024px){
-    header{
-        .navbar_wrap{
-            .hire_me_btn{
-                padding: 6px 16px;
-            }
+    .first-line{
+        @include flexbox(flex-end, center);
+        // height: 20vh;
+        gap: 24px;
+        // font-weight: 100;
+        .part-1{
+            font-size: 48px;
+            line-height: 32px;
+            // border: 1px solid green;
+            height: 100%;
+            @include flexbox(center, center);
+        }
+        .part-2{
+            font-size: 108px;
+            line-height: 84px;
+            // border: 1px solid green;
         }
     }
-    .main_container_wrap{
-        .main_content{
+    .second-line{
+        line-height: 84px;    
+        font-size: 108px;
 
-            .typewriting{
-                font-size: 18px;
-            }
-            .focal_heading_wrap{
-                .focal_heading{
-                    font-size: 72px;
-                    line-height: 72px;
-                }
-                .heading2{
-                    font-size: 72px;
-                }
-                .location{
-                    text-align: center;
-                }
-            }
+    }
+    .third-line{
+        @include flexbox(center, center);
+        font-size: 48px;
+        line-height: 42px;
+        gap: 12px;
+        .part-1{
+            font-weight: 900;
+        }
+        .part-2{
+            font-weight: 200;
         }
     }
 }
-
-
 
 
 @media screen and (max-width:750px){
